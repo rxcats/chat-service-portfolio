@@ -35,3 +35,9 @@ out/
 
 ### VS Code ###
 .vscode/
+
+
+### chat-service-client ###
+chat-service-client/package-lock.json
+chat-service-client/node_modules/
+chat-service-client/public/build/
