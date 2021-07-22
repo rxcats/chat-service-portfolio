@@ -39,7 +39,7 @@ class WebSocketConfig : WebSocketConfigurer {
         for (c in controllers) {
             val controller = c.value.javaClass.getDeclaredAnnotation(FridayCommand::class.java)
             for (m in c.value.javaClass.declaredMethods) {
-                val method = m.getDeclaredAnnotation(FridayAction::class.java)
+                val method = m.getDeclaredAnnotation(FridayAction::class.java) ?: continue
                 val uri = if (method.uri.startsWith("/")) "${controller.prefix}${method.uri}" else "${controller.prefix}/${method.uri}"
                 commands[uri] = FridayCommandEntity(c.value, m)
             }
