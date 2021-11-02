@@ -5,14 +5,20 @@
 - svelte 를 이용하여 간단한 클라이언트 생성
 
 ## 사용 기술
+
+### Backend
 - JDK: 11
 - Language: Kotlin
 - Framework: Spring Boot
 
+## Frontend
+- Language: Javascript
+- Framework: Svelte
+
 ## Client 샘플
 ![chat-client-screenshot.png](docs/img/chat-client-screenshot.png)
 
-## 빌드 방법
+## Backend 빌드
 
 ### Windows
 - `Build`
@@ -36,10 +42,7 @@ java -jar build\libs\chat-service-portfolio-0.0.1-SNAPSHOT.jar
 java -jar build/libs/chat-service-portfolio-0.0.1-SNAPSHOT.jar
 ```
 
-
-## frontend
-- Language: Javascript
-- Framework: Svelte
+## Frontend 빌드
 
 - `Build`
 ```
