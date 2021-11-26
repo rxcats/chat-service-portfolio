@@ -35,4 +35,4 @@ java -jar build/libs/chat-service-portfolio-0.0.1-SNAPSHOT.jar
 
 
 ## 데모
-- Link: <https://rxcats.github.io/chat-service-client/index.html>
+- [Link](http://132.226.21.139)
