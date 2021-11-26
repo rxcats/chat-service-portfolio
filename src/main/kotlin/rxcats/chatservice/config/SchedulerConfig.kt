@@ -4,5 +4,5 @@ import org.springframework.context.annotation.Configuration
 import org.springframework.scheduling.annotation.EnableScheduling
 
 @EnableScheduling
-@Configuration
+@Configuration(proxyBeanMethods = false)
 class SchedulerConfig

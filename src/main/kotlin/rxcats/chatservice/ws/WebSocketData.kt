@@ -6,7 +6,7 @@ import java.time.LocalDateTime
 
 data class FridayCommandEntity(val bean: Any, val method: Method)
 
-data class UserSession(
+data class UserProfile(
     val userId: String,
     val username: String,
     val userColor: String,
@@ -18,9 +18,9 @@ enum class ResultCode(@JsonValue val code: Int) {
     ERROR(10000)
 }
 
-data class WebSocketResponse<T>(
+data class ServerEventResponse<T : Any>(
     val code: ResultCode = ResultCode.OK,
     val now: LocalDateTime = LocalDateTime.now(),
-    val uri: String = "",
+    val event: String = "",
     val body: T? = null
 )

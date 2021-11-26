@@ -7,7 +7,9 @@ class JsonTest {
 
     @Test
     fun shouldBeEquals() {
-        assertThat(Json.objectMapper).isEqualTo(Json.objectMapper)
+        assertThat(Json.objectMapper)
+            .isEqualTo(Json.objectMapper)
+            .isSameAs(Json.objectMapper)
     }
 
 }
