@@ -35,4 +35,4 @@ java -jar build/libs/chat-service-portfolio-0.0.1-SNAPSHOT.jar
 
 
 ## 데모
-- [Link](http://132.226.21.139)
+- [Link](https://apps-rxcats.duckdns.org)
