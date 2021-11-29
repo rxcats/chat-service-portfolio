@@ -9,6 +9,9 @@
 - JDK: 11
 - Spring Boot 2.6 with Kotlin
 
+## 클라이언트 프로젝트
+- <https://github.com/rxcats/chat-service-client>
+
 ## 빌드
 
 ### Windows
