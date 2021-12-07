@@ -9,6 +9,9 @@
 - JDK: 11
 - Spring Boot 2.6 with Kotlin
 
+## 데모
+- <https://apps-rxcats.duckdns.org>
+
 ## 클라이언트 프로젝트
 - <https://github.com/rxcats/chat-service-client>
 
@@ -22,7 +25,7 @@ gradlew build
 
 - `Run`
 ```
-java -jar build\libs\chat-service-portfolio-0.0.1-SNAPSHOT.jar
+java -jar build\libs\chat-service.jar
 ```
 
 ### Linux or Mac
@@ -33,9 +36,5 @@ java -jar build\libs\chat-service-portfolio-0.0.1-SNAPSHOT.jar
 
 - `Run`
 ```
-java -jar build/libs/chat-service-portfolio-0.0.1-SNAPSHOT.jar
+java -jar build/libs/chat-service.jar
 ```
-
-
-## 데모
-- [Link](https://apps-rxcats.duckdns.org)
