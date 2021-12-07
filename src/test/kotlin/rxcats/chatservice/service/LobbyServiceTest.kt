@@ -35,6 +35,8 @@ class LobbyServiceTest {
         val users = service.getOnlineUsers()
 
         assertThat(users.contains(user)).isTrue
+
+        service.leave(session)
     }
 
     @Test
@@ -82,21 +84,4 @@ class LobbyServiceTest {
 
         assertThat(users.contains(user)).isFalse
     }
-
-    @Test
-    fun handle() {
-
-        val user = UserProfile(
-            userId = "junit.4",
-            username = "junit.4",
-            userColor = "#000000"
-        )
-
-        val session = mockk<WebSocketSession>()
-
-        every { session.getUser() } returns user
-
-        every { session.isOpen } returns true
-    }
-
 }
