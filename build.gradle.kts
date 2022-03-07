@@ -1,5 +1,6 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-import org.springframework.boot.gradle.tasks.bundling.BootJar
+import org.springframework.boot.gradle.tasks.bundling.BootBuildImage
+//import org.springframework.boot.gradle.tasks.bundling.BootJar
 
 plugins {
     id("org.springframework.boot") version "2.6.4"
@@ -40,6 +41,11 @@ tasks.withType<Test> {
 
 tasks.withType<Delete> {
     delete("build", "out")
+}
+
+tasks.withType<BootBuildImage> {
+    builder = "paketobuildpacks/builder:tiny"
+    environment = mapOf("BP_NATIVE_IMAGE" to "true")
 }
 
 //tasks.withType<Jar> { enabled = false }
